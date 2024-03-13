@@ -1,0 +1,28 @@
+<ion-content>
+  <app-header-network
+    [orientation]="'start'"
+    [vertical]="'top'"
+  ></app-header-network>
+  <div class="content-wrapper">
+    <ion-input
+      #inputx
+      label="Codigo"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Ingrese el codigo"
+    ></ion-input>
+    <ion-button
+      [disabled]="inputx.value === ''"
+      (click)="getlistados(inputx?.value)"
+    >
+      Ruta
+    </ion-button>
+    <ion-label> auto update {{version}} </ion-label>
+    <ion-toast
+      [isOpen]="isToastOpen"
+      [message]="messagetoast"
+      [duration]="5000"
+      (didDismiss)="setOpen(false)"
+    ></ion-toast>
+  </div>
+</ion-content>

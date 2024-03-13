@@ -1,0 +1,27 @@
+export interface Listado {
+  Enlistamiento: string | null;
+  Chofer: string | null;
+  Fecha: Date | null;
+  HoraSalida: string | null;
+  KmRecorridos: number | null;
+  PrecioPorKm: number | null;
+  RutaOriginal: number | null;
+  keyEntrega: string | null;
+  Factura: string | null;
+  Orden: number | null;
+  Cliente: string | null;
+  NomCliente: string | null;
+  Contacto: string | null;
+  Telefono: null | string;
+  Direccion: string | null;
+  Lat: string | null;
+  Lon: string | null;
+  HoraAPI: string | null;
+  HorarioAtencion: string | null;
+  TiempoPromEntrega: string | null;
+  TiempoAdicional: string | null;
+  HoraLlegada: string | null;
+  HoraEstimadaLlegada: string | null;
+  HoraEstimadaSalida: string | null;
+  EstadoEntrega: string | null;
+}
